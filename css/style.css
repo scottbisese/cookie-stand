@@ -18,7 +18,7 @@ h2 {
   }
   
 #navbar a {
-    float: left;
+    float: center;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -39,4 +39,14 @@ h2 {
   .sticky + .content {
     padding-top: 60px;
   }
-  /* found this navbar code on google */ 
+
+  a:hover, a.ex1:active {
+    background-color: rgb(55, 27, 218);
+    font-family: Futura, monotype;
+    color: blueviolet;
+    font-weight: 100;
+    font-size: 200%;
+  }
+  
+ 
+  /* found this navbar code on google in first few results*/ 
