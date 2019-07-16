@@ -1,0 +1,55 @@
+body {
+    background-color: #9DC5EB;
+    
+  }
+h1 {
+    Font-family: Helvetica, Sans-serif;
+    text-align: center;
+    color: #F4F6FA;
+}
+h2 {
+    Font-family: Helvetica, Sans-serif;
+    text-align: center;
+    color: #CEF7FA;
+}
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+#navbar a {
+    float: center;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  a:hover{
+    background-color: (red);
+    font-family: Futura, monotype;
+    color: blueviolet;
+    font-weight:150;
+    font-size: 120%;
+  }
+
+a:hover {
+    color: green;
+}
+ 
+  /* found this navbar code on google in first few results*/ 
