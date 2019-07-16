@@ -8,7 +8,7 @@ var Pike={
     avgCooks: 6.3,
     hourArray: [],
     numCust: function(){
-        return (math.random()*(Pike.maxCust-Pike.minCust) + Pike.minCust);
+        return math.ceil(math.random()*(Pike.maxCust-Pike.minCust + 1) + Pike.minCust);
     },
     cooksPurchased: function(){
         for(var i=0; i<15; i++){
