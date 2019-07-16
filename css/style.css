@@ -40,13 +40,16 @@ h2 {
     padding-top: 60px;
   }
 
-  a:hover, a.ex1:active {
-    background-color: rgb(55, 27, 218);
+  a:hover{
+    background-color: (red);
     font-family: Futura, monotype;
     color: blueviolet;
-    font-weight: 100;
-    font-size: 200%;
+    font-weight:150;
+    font-size: 120%;
   }
-  
+
+a:hover {
+    color: green;
+}
  
   /* found this navbar code on google in first few results*/ 

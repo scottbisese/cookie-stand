@@ -1,4 +1,6 @@
 "use strict";
+//hour array
+var hours=['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
 var Pike={
     minCust: 23,
@@ -66,7 +68,7 @@ var Alki={
     avgCooks: 4.6,
     hourArray: [],
     numCust: function(){
-        return (math.random()*(Alki.maxCust-Alki.minCust) + Alki.minCust);
+        return math.ceil(math.random()*(Alki.maxCust-Alki.minCust + 1) + Alki.minCust);
     },
     cooksPurchased: function(){
         for(var i=0; i<15; i++){
@@ -89,3 +91,5 @@ function simulate() {
 
 simulate();
 console.log(Pike);
+
+//had some help from Rebel Flesh, but i typed it all out and changed values. Still.. it didn't work.. but I have run out of time. 
