@@ -94,15 +94,15 @@ CapitolHill.cookiesPurchased();
 Alki.cookiesPurchased();
 
 function MakeList(location, id) { //use JS to create html lists
-    var ListLocation = document.getElementById(id); // create variable to store dom id
+    var listLocation = document.getElementById(id); // create variable to store dom id
     var listHeader = document.createElement('strong');
     listHeader.textContent = location.name;
-    ListLocation.appendChild(listHeader);
+    listLocation.appendChild(listHeader);
     for (var i = 0; i < hours.length; i++) { // iterate through hour array at very top
         var sales = document.createElement('li'); // create a new variable sales that is a list element
         var message = `${hours[i]}: ${location.hourArray[i]} cookies`; //display a message
         sales.textContent = message; // append the child 
-        ListLocation.appendChild(sales);
+        listLocation.appendChild(sales);
     }
 
     var totals = document.createElement('li');
@@ -112,7 +112,7 @@ function MakeList(location, id) { //use JS to create html lists
     }
     var totalMessage = `Total: ${total} cookies`;
     totals.textContent = totalMessage;
-    ListLocation.appendChild(totals);
+    listLocation.appendChild(totals);
 }
 
 MakeList(Pike, "pikeList");
@@ -137,4 +137,4 @@ MakeList(Alki, "alkiList");
 // simulate();
 // console.log(Pike);
 
-//had some help from Rebel Flesh, but i typed it all out and changed values. Still.. it didn't work.. but I have run out of time. 
+//had some help from Rebel Flesh.
