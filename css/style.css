@@ -1,22 +1,30 @@
 body {
     background-color: #9DC5EB;
-    
-  }
-h1 {
+    }
+#tableCaption {
+    color: rgb(189, 61, 61);
+    background-color: lightblue;
+    }
+#salesHead {
+  color:white;
+  text-align: center;
+  background-color: blue;
+}
+#indexHead {
     Font-family: Helvetica, Sans-serif;
     text-align: center;
-    color: #F4F6FA;
-}
+    color: rgb(6, 76, 216);
+    background-color: white;
+  }
 h2 {
     Font-family: Helvetica, Sans-serif;
     text-align: center;
     color: #CEF7FA;
-}
+  }
 #navbar {
     overflow: hidden;
     background-color: #333;
   }
-  
 #navbar a {
     float: center;
     display: block;
@@ -25,31 +33,68 @@ h2 {
     padding: 14px;
     text-decoration: none;
   }
-  
-  .content {
+.content {
     padding: 16px;
   }
-  
-  .sticky {
-    position: fixed;
-    top: 0;
+.sticky {
+    position: relative;
+    bottom: 150;
     width: 100%;
   }
-  
-  .sticky + .content {
+.sticky + .content {
     padding-top: 60px;
   }
-
-  a:hover{
+a:hover{
     background-color: (red);
     font-family: Futura, monotype;
     color: blueviolet;
     font-weight:150;
     font-size: 120%;
   }
-
-a:hover {
-    color: green;
+#tableReal {
+  padding: 1px;
+  float: center;
+  top: 20%;
+  left: 0;
+  height: 600px;
+  width: 1500px;
+  background-color: rgb(102, 92, 213);
+  margin: 48px 48px 48px 48px;
+  position: relative;
+  }
+#tHead {
+  background-color: white;
+  }
+th {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 5px solid blue; 
 }
- 
-  /* found this navbar code on google in first few results*/ 
+th:last-child {
+  background-color: gray;
+}
+th:first-child{
+  border-bottom:none;
+}
+tr:nth-child(even){
+  background-color: salmon;
+}
+tFoot{
+  background-color:aquamarine;
+  border-top: 6px dotted red;
+}
+td{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+td:first-child{
+  font-size:20px;
+  font-weight: bold;
+  width: 10px;
+  border-right: 5px solid blue;
+  background-color: white;
+}
+tFoot:first-child{
+  background-color:gray;
+}
